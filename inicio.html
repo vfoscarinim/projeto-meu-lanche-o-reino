@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Reino Burguer - Hamburgueria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">O Reino Burguer</a>
+            <div>
+                <a class="btn btn-outline-light" onclick="fazerPedido()">Pedido</a>
+                <a class="btn btn-outline-light" onclick="irParaCardapio()">Cardápio</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="imgs/banner1 (1).png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="imgs/banner2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/banner3.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<div class="container container-cards">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card">
+        <img src="imgs/cardpromo1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PROMO DO DIA</h5>
+          <p class="card-text">Um hamburguer irresistivel para matas a fom de verdade! Com <b>dois suculentos burguers, bacon crocante, queijo derretido,</b> alface e molho especial. Perfeito para quem ama um lanche bem servido, com sabor marcante e ingredientes selecionados.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col">
+      <div class="card">
+        <img src="imgs/cardpromo2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PROMO DO DIA</h5>
+          <p class="card-text">Porção generosa de <b>batatas fritas douradinhas super crocantes, </b>cobertas com <b>bacon crocante</b> e finalizadas com o tempero da casa. Ideal para dividir, perfeita  para acompanhamento ou lanche principal para os amantes de bacon!</p>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <div class="col">
+      <div class="card">
+        <img src="imgs/cardpromo3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SUPER COMBO DO DIA</h5>
+          <p class="card-text">O combo perfeito para fechar a semana com chave de ouro! Um <B>hambúrguer duplo recheado,</B> queijo derretido, alface, molho especial, uma <b>porção caprichada</b> de batatas fritas com bacon crocante e ainda acompanha um <b>refrigerante de 500ml</b> bem gelado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="d-grid gap-2 col-6 mx-auto mt-4">
+    <button class="btn btn-primary" type="button" onclick="irParaCardapio()">ACESSE NOSSO CARDÁPIO</button>
+    <button class="btn btn-primary" type="button" onclick="fazerPedido()">FAÇA SEU PEDIDO</button>
+  </div>
+</div>
+  
+<footer class="footer bg-dark text-light py-4">
+  <div class="container text-center">
+    <p><b>© 2025 O Reino Burguer. Todos os direitos reservados.</b></p>
+  </div>
+</footer>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="pedido.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+/* Reset básico */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f2; /* tom claro neutro */
+    color: #212529;
+}
+/*Style pag Inicio*/
+/* Navbar escura com estilo personalizado */
+.navbar.navbar-dark.bg-dark {
+    background-color: #940000 !important;
+    padding: 1rem 2rem;
+    border-bottom: 4px solid #ffffff;
+}
+
+/* Logo */
+.navbar.navbar-dark .navbar-brand {
+    color: #f8c10c !important;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Botões da navbar */
+.navbar .btn-outline-light {
+    border-color: #f8c10c !important;
+    color: #f8c10c !important;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: #f8c10c !important;
+    color: #000 !important;
+}
+
+/* Estilo do carrossel */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+/* Container para os cards */
+.container-cards {
+    padding: 3rem 1rem;
+}
+
+/* Cards personalizados */
+.card {
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+
+/* Conteúdo interno do card */
+.card-body {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #800000; /* vinho escuro */
+}
+
+.card-text b {
+    color: #d32f2f; /* vermelho para destaque */
+}
+
+/* Botões principais */
+.btn-primary {
+    background-color: #800000;
+    border-color: #800000;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #bb2828;
+    border-color: #ffe600;
+}
+
+/* Botões centralizados */
+.d-grid {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #940000 !important; /* vinho escuro */
+  color: #f8c10c !important; /* amarelo */
+}
+
+footer.footer a {
+  color: #f8c10c !important;
+  transition: color 0.3s ease;
+}
+
+footer.footer a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+    }
+}
+
+/* Style pag Cardápio*/
+.lanche-card {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa;
+  transition: transform 0.2s ease-in-out;
+}
+
+.lanche-card:hover {
+  transform: scale(1.02);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #940000; 
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* igual ao body/nav */
+}
+
+/* Style pag Pedido*/
+
+    .pagina-pedido {
+      background-color: #fff8f2;
+      padding: 3rem 1rem;
+    }
+
+    .pedido-box {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .pedido-box h2 {
+      color: #940000;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .form-check-label {
+      font-weight: 500;
+      color: #212529;
+    }
+
+    .pedido-total {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #800000;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    #qrcode canvas {
+      display: block;
+      margin: 1rem auto 0;
+    }
+
+    .btn-finalizar {
+      background-color: #f8c10c;
+      color: #940000;
+      font-weight: bold;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      font-size: 1.1rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn-finalizar:hover {
+      background-color: #e6b800;
+      color: #000;
+    }
+
+    /* Modal ajustes */
+    .modal-content {
+      border-radius: 10px;
+    }
+
+    .modal-header {
+      background-color: #940000;
+      color: #fff;
+    }
+
+    .modal-body {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+   html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.pagina-pedido {
+  flex: 1;
+}
+
+
+footer.footer {
+  background-color: #940000 !important;
+  color: #f8c10c !important;
+  padding: 1rem 0;
+  text-align: center;
+}
