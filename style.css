@@ -41,7 +41,7 @@ body {
 
 /* Estilo do carrossel */
 .carousel-item img {
-    max-height: 500px;
+    max-height: 530px;
     object-fit: cover;
     margin-bottom: 2rem;
 }
