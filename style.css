@@ -219,6 +219,14 @@ footer.footer a:hover {
       color: #000;
     }
 
+    .d-flex.align-items-center {
+    gap: 10px;
+    }
+
+    .quantidade-lanche {
+    max-width: 80px;
+    }
+
     /* Modal ajustes */
     .modal-content {
       border-radius: 10px;
