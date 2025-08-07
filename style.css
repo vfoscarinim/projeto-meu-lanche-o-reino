@@ -1,11 +1,10 @@
 /* Reset básico */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8f2; /* tom claro neutro */
+    background-color: #fff8f2; 
     color: #212529;
 }
 /*Style pag Inicio*/
-/* Navbar escura com estilo personalizado */
 .navbar.navbar-dark.bg-dark {
     background-color: #940000 !important;
     padding: 1rem 2rem;
@@ -77,11 +76,11 @@ body {
 .card-title {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #800000; /* vinho escuro */
+    color: #800000; 
 }
 
 .card-text b {
-    color: #d32f2f; /* vermelho para destaque */
+    color: #d32f2f; 
 }
 
 /* Botões principais */
@@ -90,6 +89,7 @@ body {
     border-color: #800000;
     font-weight: bold;
     transition: background-color 0.2s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .btn-primary:hover {
@@ -104,8 +104,8 @@ body {
 
 /* Footer */
 footer.footer {
-  background-color: #940000 !important; /* vinho escuro */
-  color: #f8c10c !important; /* amarelo */
+  background-color: #940000 !important; 
+  color: #f8c10c !important; 
 }
 
 footer.footer a {
@@ -150,7 +150,6 @@ footer.footer a:hover {
 }
 
 /* Style pag Pedido*/
-
     .pagina-pedido {
       background-color: #fff8f2;
       padding: 3rem 1rem;
@@ -236,7 +235,6 @@ body {
 .pagina-pedido {
   flex: 1;
 }
-
 
 footer.footer {
   background-color: #940000 !important;
