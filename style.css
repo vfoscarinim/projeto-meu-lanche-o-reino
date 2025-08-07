@@ -1,14 +1,20 @@
 /* Reset básico */
 body {
+  padding-top: 70px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff8f2; 
     color: #212529;
 }
 /*Style pag Inicio*/
 .navbar.navbar-dark.bg-dark {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; /* valor alto para ficar na frente */
     background-color: #940000 !important;
     padding: 1rem 2rem;
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 /* Logo */
@@ -18,6 +24,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 
 /* Botões da navbar */
 .navbar .btn-outline-light {
@@ -44,6 +51,10 @@ body {
     padding: 3rem 1rem;
 }
 
+.container-cards, .carousel-item {
+  padding-top: 70px; /* ou margin-top, se preferir */
+}
+
 /* Cards personalizados */
 .card {
     max-width: 300px;
@@ -59,6 +70,9 @@ body {
 }
 
 .card-img-top {
+  width: 100%; /* garante largura total */
+    display: block; /* remove espaço embaixo */
+    margin: 0 auto;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     height: 180px;
@@ -69,8 +83,9 @@ body {
 
 /* Conteúdo interno do card */
 .card-body {
-    padding: 0.8rem 1rem;
+    padding: 0.2rem 1rem;
     font-size: 0.9rem;
+    max-width: 100%;
 }
 
 .card-title {
@@ -144,8 +159,7 @@ footer.footer a:hover {
     font-weight: bold;
     color: #940000; 
     text-transform: uppercase;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* igual ao body/nav */
 }
 
@@ -162,6 +176,7 @@ footer.footer a:hover {
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
       max-width: 750px;
       margin: 0 auto;
+      margin-top: 150px;
     }
 
     .pedido-box h2 {
