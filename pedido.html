@@ -53,21 +53,12 @@
 
                 <div id="bebidas-container" class="mb-4">
                   <button type="button" class="btn btn-secondary mb-3" onclick="criarBlocoBebida()">+ Adicionar bebida</button>
-  <label for="bebida" class="form-label fw-bold">Escolha uma bebida:</label>
-  <div class="d-flex align-items-center mb-2">
-    <select class="form-select me-3" id="bebida" required onchange="atualizarSabores()">
-      <option value="" disabled selected>Selecione uma bebida</option>
-      <option value="Refrigerante 350ml" data-price="5.00" data-tipo="refri">Refrigerante 350ml - R$5,00</option>
-      <option value="Refrigerante 500ml" data-price="7.00" data-tipo="refri">Refrigerante 500ml - R$7,00</option>
-      <option value="Suco 290ml" data-price="8.00" data-tipo="suco">Suco 290ml - R$8,00</option>
-      <option value="Água 500ml" data-price="4.00" data-tipo="agua">Água 500ml - R$4,00</option>
-    </select>
-    <input type="number" id="qtd-bebida" class="form-control" min="1" value="1" style="width: 80px;" />
-  </div>
+  
   
   <div id="sabores-container" style="display:none;">
     <label for="sabor-bebida" class="form-label fw-bold">Escolha o sabor:</label>
     <select class="form-select" id="sabor-bebida">
+        
       <!-- Opções de sabores são atualizadas pelo JS -->
     </select>
   </div>
